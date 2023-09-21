@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Tangerine:wght@400;700&display=swap');
+html{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #B78996 !important;
+}
+
+.navbar-brand{
+    font-family: 'Tangerine', cursive;
+    font-size: 40px;
+}
+
+.nav-link{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#title-about-me{
+    font-family: 'Tangerine', cursive;
+    color: #ffffff;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#text-about-me{
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-align: justify;
+    text-align-last: start;
+}
+
+#img-about{
+    max-width: 500px;
+}
+
+#section-about{
+    background-color: #C1A59F;
+}
