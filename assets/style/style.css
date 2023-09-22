@@ -102,3 +102,20 @@ body {
     max-width: 80px;
   }
 }
+
+.picture-curtain {
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  height: 560px;
+  overflow: hidden;
+}
+
+.picture-curtain div {
+  position: absolute;
+}
+
+.picture-curtain .foreground-picture-container {
+  width: 30%;
+  overflow: hidden;
+}
