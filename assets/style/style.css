@@ -1,43 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Tangerine:wght@400;700&display=swap');
-html{
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Tangerine:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
 }
 
-.navbar{
-    background-color: #B78996 !important;
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
-.navbar-brand{
-    font-family: 'Tangerine', cursive;
-    font-size: 40px;
+.navbar {
+  background-color: #b789966b;
 }
 
-.nav-link{
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
+.navbar-brand {
+  font-family: "Tangerine", cursive;
+  font-size: 40px;
 }
 
-#title-about-me{
-    font-family: 'Tangerine', cursive;
-    color: #ffffff;
-    font-size: 5rem;
-    text-align: center;
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
-#text-about-me{
-    color: #ffffff;
-    font-size: 1.3rem;
-    text-align: justify;
-    text-align-last: start;
+#title-about-me {
+  font-family: "Tangerine", cursive;
+  color: #ffffff;
+  font-size: 5rem;
+  text-align: center;
 }
 
-#img-about{
-    max-width: 500px;
+#text-about-me {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: start;
 }
 
-#section-about{
-    background-color: #C1A59F;
+#img-about {
+  max-width: 90%;
+  border-radius: 50%;
+}
+
+#section-about,
+.background-old-pink {
+  background-color: #c1a59fa1;
+}
+
+.cards-img {
+  background-color: #c1a59fa1;
+  padding: 2rem;
+}
+
+.title-article-dra {
+  font-family: "Tangerine", cursive;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.title-article {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.img-countries {
+  max-width: 120px;
+}
+
+.img-after-before {
+  max-width: 91%;
+}
+
+#title-patients {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-patients{
+    height: 400px;
+    position: relative;
+}
+
+.img-patients{
+    max-width: 200px;
+    position: absolute;
+}
+
+.container-with-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://dummyimage.com/1920x700/cfcfcf/0011ff);
+}
+
+@media (max-width: 756px) {
+  .img-countries {
+    max-width: 80px;
+  }
 }
