@@ -8,6 +8,12 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  color: #212529;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
 }
 
 .navbar {
@@ -44,7 +50,8 @@ body {
   border-radius: 50%;
 }
 
-#section-about,
+#section-home,
+#section-contact,
 .background-old-pink {
   background-color: #c1a59fa1;
 }
@@ -58,11 +65,15 @@ body {
   font-family: "Tangerine", cursive;
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0;
 }
 
 .title-article {
   font-size: 24px;
   font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0;
 }
 
 .img-countries {
@@ -83,17 +94,17 @@ body {
 }
 
 .section-patients {
-  height: 400px;
+  height: 600px;
   position: relative;
 }
 
 .img-patients {
-  max-width: 200px;
+  max-width: 300px;
   position: absolute;
 }
 
 .container-with-background {
-  background-image: url(https://dummyimage.com/1920x700/cfcfcf/0011ff);
+  background-image: url(/assets/imgs/bg-congrats.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +112,7 @@ body {
 
 @media (max-width: 756px) {
   .img-countries {
-    max-width: 80px;
+    max-width: 60px;
   }
 }
 
@@ -238,7 +249,7 @@ body {
 .swiper-container {
   width: 100%;
   height: 100vh;
-  transition: opacity 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .swiper-container:hover .swiper-button-prev,
@@ -274,6 +285,55 @@ body {
   font-size: 15px;
   line-height: 1.4;
   text-align: start;
+}
+
+.btn-articles-bg-pink {
+  max-width: 150px;
+  background-color: #c1a59fa1;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 25px;
+  transition: all 0.2s;
+}
+
+.btn-articles-bg-pink:hover {
+  background-color: #c1a59f;
+  font-weight: 600;
+}
+
+.btn-articles-bg-white {
+  max-width: 150px;
+  background-color: #ffffff96;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  color: #212529;
+  padding: 10px 25px;
+  transition: all 0.2s;
+}
+
+.btn-articles-bg-white:hover {
+  background-color: #c1a59fa1;
+  font-weight: 600;
+}
+
+.btn-see-more {
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+  color: #ffffff;
+  background-color: #c1a59fa1;
+  padding: 10px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.btn-see-more:hover {
+  background-color: #c1a59f;
+  font-weight: 600;
 }
 
 [class^="swiper-button-"] {
@@ -320,6 +380,9 @@ body {
   border-width: 1px;
 }
 
+.text-link-contact{
+  color: #ffffff;
+}
 
 @media (max-width: 1180px) {
   .swiper-slide .content .title {
@@ -331,9 +394,52 @@ body {
 }
 @media (max-width: 1023px) {
   .swiper-container {
-    height: 40vw;
+    height: 80vw;
   }
   .swiper-container.swiper-coverflow {
-    padding-top: 0;
+    padding: 2rem;
+  }
+  .swiper-slide .content{
+    top:30%;
+    width: 100%;
+  }
+
+  .btn-see-more{
+    right: 20%;
+  }
+}
+
+.text-with-bg {
+  max-width: 200px;
+  color: #656160;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: #ebe2e0;
+  margin: 0 auto;
+}
+
+.text-social-medias {
+  color: #ffffff;
+}
+
+@media (max-width: 756px) {
+  #text-about-me {
+    text-align: justify;
+    text-align-last: center;
+  }
+
+  #title-patients {
+    color: #212529;
+  }
+  .compare {
+    height: 300px;
+    width: 300px;
+  }
+  .compare__image img {
+    width: 300px;
+    height: 300px;
+  }
+  .content-details {
+    top: 80%;
   }
 }
