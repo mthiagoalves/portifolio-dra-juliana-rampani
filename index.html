@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/portifolio-dra-juliana-rampani/assets/style/style.css" />
   </head>
   <body>
@@ -187,32 +191,20 @@
           </div>
           <div class="col-12 p-0 p-sm-4">
             <div class="row m-0 justify-content-center align-items-center">
-              <div
-                class="col-sm-6 col-12 p-sm-5 p-0 text-center position-relative"
-              >
-                <div
-                  class="picture-curtain"
-                  onMouseEnter="curtainEffectHandler(event);"
-                  onMouseMove="curtainEffectHandler(event);"
-                  onMouseLeave="curtainEffectHandler(event);"
-                >
-                  <div class="background-picture-container">
-                    <img
-                      class="background-picture"
-                      src="/portifolio-dra-juliana-rampani/assets/imgs/before.jpg"
-                      alt="background picture"
-                    />
+              <div class="col-sm-6 col-12 p-sm-5 p-0">
+                <div class="compare">
+                  <div class="compare__image">
+                    <img src="/portifolio-dra-juliana-rampani/assets/imgs/after.jpg" alt="" />
+                    <p class="text-after">AFTER</p>
                   </div>
-                  <div class="foreground-picture-container">
-                    <img
-                      class="foreground-picture"
-                      src="/portifolio-dra-juliana-rampani/assets/imgs/after.jpg"
-                      alt="foreground picture"
-                    />
+                  <div class="compare__delimeter"></div>
+                  <div class="compare__image compare__after">
+                    <img src="/portifolio-dra-juliana-rampani/assets/imgs/before.jpg" alt="" />
+                    <p class="text-before">BEFORE</p>
                   </div>
                 </div>
-                <div class="cursor-line"></div>
               </div>
+
               <div class="col-sm-6 col-12 p-5 background-old-pink">
                 <h2 class="title-article">Procedimentos</h2>
                 <p>
@@ -247,7 +239,7 @@
                 class="img-fluid img-patients"
                 style="top: 15%; left: 7%"
               />
-              
+
               <img
                 src="/portifolio-dra-juliana-rampani/assets/imgs/image-07.jpg"
                 class="img-fluid img-patients"
@@ -268,14 +260,13 @@
                 class="img-fluid img-patients"
                 style="top: 15%; right: 7%"
               />
-              
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="container-fluid p-4 container-with-background">
-          <div class="col-12 p-0">
+        <div class="container-fluid p-0 pt-sm-4">
+          <div class="col-12 p-4 container-with-background">
             <div class="row m-0 justify-content-center align-items-center">
               <div class="col-5 d-sm-block d-none">
                 <img src="/portifolio-dra-juliana-rampani/assets/imgs/image-11.jpg" alt="" class="img-fluid" />
@@ -296,13 +287,299 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="container-fluid p-0">
+          <div class="col-12 p-4 text-center">
+            <h2 class="title-article">Entrevistas</h2>
+            <div class="row m-0 justify-content-center align-items-center">
+              <div class="col-4 p-2">
+                <div class="col-12 p-0 content-main">
+                  <a href="#" class="text-decoration-none">
+                    <img
+                      src="/portifolio-dra-juliana-rampani/assets/imgs/enterview-01.jpg"
+                      alt=""
+                      class="img-fluid img-enterviews"
+                    />
+                    <div class="content-overlay">
+                      <h3 class="title-enterview">Enterview 01</h3>
+
+                      <div class="content-details">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <p>VER MAIS</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 p-2">
+                <div class="col-12 p-0 content-main">
+                  <a href="#" class="text-decoration-none">
+                    <img
+                      src="/portifolio-dra-juliana-rampani/assets/imgs/enterview-02.jpg"
+                      alt=""
+                      class="img-fluid img-enterviews"
+                    />
+                    <div class="content-overlay">
+                      <h3 class="title-enterview">Enterview 02</h3>
+
+                      <div class="content-details">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <p>VER MAIS</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 p-2">
+                <div class="col-12 p-0 content-main">
+                  <a href="#" class="text-decoration-none">
+                    <img
+                      src="/portifolio-dra-juliana-rampani/assets/imgs/enterview-03.jpg"
+                      alt=""
+                      class="img-fluid img-enterviews"
+                    />
+                    <div class="content-overlay">
+                      <h3 class="title-enterview">Enterview 03</h3>
+
+                      <div class="content-details">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <p>VER MAIS</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 p-2">
+                <div class="col-12 p-0 content-main">
+                  <a href="#" class="text-decoration-none">
+                    <img
+                      src="/portifolio-dra-juliana-rampani/assets/imgs/enterview-04.jpg"
+                      alt=""
+                      class="img-fluid img-enterviews"
+                    />
+                    <div class="content-overlay">
+                      <h3 class="title-enterview">Enterview 04</h3>
+
+                      <div class="content-details">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <p>VER MAIS</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 p-2">
+                <div class="col-12 p-0 content-main">
+                  <a href="#" class="text-decoration-none">
+                    <img
+                      src="/portifolio-dra-juliana-rampani/assets/imgs/enterview-05.jpg"
+                      alt=""
+                      class="img-fluid img-enterviews"
+                    />
+                    <div class="content-overlay">
+                      <h3 class="title-enterview">Enterview 05</h3>
+
+                      <div class="content-details">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <p>VER MAIS</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid p-0">
+          <div class="col-12 text-center">
+            <h2 class="title-article">Matérias</h2>
+
+            <section class="swiper-container">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(/portifolio-dra-juliana-rampani/assets/imgs/matter-01.jpg)"
+                >
+                  <img src="/portifolio-dra-juliana-rampani/assets/imgs/matter-01.jpg" class="entity-img" />
+                  <div class="content">
+                    <p
+                      class="title"
+                      data-swiper-parallax="-30%"
+                      data-swiper-parallax-scale=".7"
+                    >
+                      Terra
+                    </p>
+                    <span class="caption" data-swiper-parallax="-20%"
+                      >Dra. Juliana Rampani reforça cuidados com a pele durante
+                      o Carnaval</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(/portifolio-dra-juliana-rampani/assets/imgs/matter-02.jpg)"
+                >
+                  <img src="/portifolio-dra-juliana-rampani/assets/imgs/matter-02.jpg" class="entity-img" />
+                  <div class="content">
+                    <p
+                      class="title"
+                      data-swiper-parallax="-30%"
+                      data-swiper-parallax-scale=".7"
+                    >
+                      PUREPEOPLE
+                    </p>
+                    <span class="caption" data-swiper-parallax="-20%"
+                      >dra. Juliana Rampani fala sobre as aplicações injetáveis
+                      e tecnológicas.</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(/portifolio-dra-juliana-rampani/assets/imgs/matter-03.jpg)"
+                >
+                  <img src="/portifolio-dra-juliana-rampani/assets/imgs/matter-03.jpg" class="entity-img" />
+                  <div class="content">
+                    <p
+                      class="title"
+                      data-swiper-parallax="-30%"
+                      data-swiper-parallax-scale=".7"
+                    >
+                      DIÁRIO DO RIO
+                    </p>
+                    <span class="caption" data-swiper-parallax="-20%"
+                      >Dra. Juliana Rampani explica a ação da Soroterapia no
+                      aumento da disposição e na defesa do organismo.</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(/portifolio-dra-juliana-rampani/assets/imgs/matter-04.jpg)"
+                >
+                  <img src="/portifolio-dra-juliana-rampani/assets/imgs/matter-04.jpg" class="entity-img" />
+                  <div class="content">
+                    <p
+                      class="title"
+                      data-swiper-parallax="-30%"
+                      data-swiper-parallax-scale=".7"
+                    >
+                      FOCO NOS NEGÓCIOS
+                    </p>
+                    <span class="caption" data-swiper-parallax="-20%"
+                      >Dra Juliana Rampani é convocada para o treinamento
+                      técnico em fios de PDO nas sedes de franquias estéticas
+                      mais renomadas do país.</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(/portifolio-dra-juliana-rampani/assets/imgs/matter-05.jpg)"
+                >
+                  <img src="/portifolio-dra-juliana-rampani/assets/imgs/matter-05.jpg" class="entity-img" />
+                  <div class="content">
+                    <p
+                      class="title"
+                      data-swiper-parallax="-30%"
+                      data-swiper-parallax-scale=".7"
+                    >
+                      OBSERVATÓRIO DOS FAMOSOS
+                    </p>
+                    <span class="caption" data-swiper-parallax="-20%"
+                      >Existe segredo para juventude? 3 famosos que parecem não
+                      mudar com os anos</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev swiper-button-white"></div>
+              <div class="swiper-button-next swiper-button-white"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section id="section-about">
+        <div class="container p-0">
+          <div class="row m-0 justify-content-center align-items-center">
+            <div class="col-6 p-5 d-sm-block d-none">
+              <img
+                src="/portifolio-dra-juliana-rampani/assets/imgs/thumb-contact.jpg"
+                class="img-fluid"
+                id="img-about"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-6 col-12 p-5">
+              <h1 id="title-about-me">Contato</h1>
+              <p id="text-about-me"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Av. São Gualter, 499 – 1º andar Alto de Pinheiros | São Paulo/SP <br>
+                <i class="fa-solid fa-phone" style="color: #ffffff;"></i> (11) 2925-7235 <br>
+                <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i> (11) 94162-4610 <br>
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i> contato@clinicarampani.com.br
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <script src="/portifolio-dra-juliana-rampani/assets/scripts/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="/portifolio-dra-juliana-rampani/assets/scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      // Params
+      var sliderSelector = ".swiper-container",
+        options = {
+          init: false,
+          loop: true,
+          speed: 800,
+          slidesPerView: 2, // or 'auto'
+          // spaceBetween: 10,
+          centeredSlides: true,
+          effect: "coverflow", // 'cube', 'fade', 'coverflow',
+          coverflowEffect: {
+            rotate: 50, // Slide rotate in degrees
+            depth: 0, // Depth offset in px (slides translate in Z axis)
+            modifier: 1, // Effect multipler
+            slideShadows: true, // Enables slides shadows
+          },
+          grabCursor: true,
+          parallax: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            1023: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+          },
+          // Events
+          on: {
+            imagesReady: function () {
+              this.el.classList.remove("loading");
+            },
+          },
+        };
+      var mySwiper = new Swiper(sliderSelector, options);
+
+      // Initialize slider
+      mySwiper.init();
+    </script>
   </body>
 </html>
